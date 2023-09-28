@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: #fff;
+}
+body {
+  background: url(Img/backGroung.jpg) no-repeat;
+  background-size: cover;
+  margin: 20px;
+}
+
+.Nav-bar ul {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.Nav-bar li {
+  list-style-type: none;
+  padding: 1rem;
+}
+
+.Nav-bar a {
+  text-decoration: none;
+}
+.Nav-bar-logo {
+  flex: 1;
+  font-size: 1.5rem;
+  user-select: none;
+}
+.Nav-bar-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.Nav-bar-Links:hover a {
+  text-decoration: none;
+  color: #ad1e1e;
+}
+@media (max-width: 600px) {
+  .Nav-bar ul {
+    flex-wrap: wrap;
+  }
+  .Nav-bar-toggle {
+    display: block;
+  }
+  .Nav-bar-Links {
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+}
+.Btn {
+  background-color: #ad1e1e;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  justify-content: center;
+}
+.active {
+  display: block;
+}
+/*
+End Nav Bar
+*/
+
+article {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  height: 90%;
+  padding-left: 150px;
+}
+article h2,
+h1,
+p {
+  padding-bottom: 20px;
+}
+article h2 {
+  color: rgb(235, 180, 235);
+}
+h1 span {
+  color: #ad1e1e;
+}
+.Txt {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 10px;
+}
+h1 {
+  font-size: 60px;
+}
+/*
+button inside input text html
+*/
+form {
+  display: flex;
+  flex-direction: row;
+}
+.BtnSend {
+  /* Tell the input to use all the available space */
+  flex-grow: 2;
+  /* And hide the input's outline, so the form looks like the outline */
+  border: none;
+  margin-left: -50px;
+}
